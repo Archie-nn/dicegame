@@ -33,6 +33,7 @@
 ```csharp
 int offsetX = rand.Next(-8, 9);
 int scale = rand.Next(-10, 11);
+```
 結束時利用 while(true) 在背景計算點數，直到 HasPair(dice) 判定有對子才停止，並還原標準尺寸（100x100），確保畫面乾淨
 
 ### 2. LINQ 點數分析邏輯 (CalculateScore)
@@ -55,3 +56,7 @@ int scale = rand.Next(-10, 11);
 - 開始激戰：點擊開滾按鈕 (btnRoll)，按鈕會自動暫時停用以防重複觸發。
 
 - 結果揭曉：等待雙方動畫結束後，底部標籤 (lblResult) 將顯示輸贏結果，並播放對應勝負音效與更新資金餘額。
+
+## Screenshots
+
+![screenshot](./dicegame.png)
